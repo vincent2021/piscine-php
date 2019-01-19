@@ -1,4 +1,5 @@
-php -r '
+#!/usr/bin/php
+<?php
 while ($nb=readline("Entrez un nombre: ")) {
 	if ($nb == EOF) {
 		break;
@@ -8,4 +9,5 @@ while ($nb=readline("Entrez un nombre: ")) {
 	} elseif (is_numeric($nb)) {
 		echo "Le chiffre $nb est Impair\n";
 	}
-}'
+}
+?>
