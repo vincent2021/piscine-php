@@ -1,11 +1,15 @@
 #!/usr/bin/php
 <?php
 $i = 1;
+$j = 0;
 while ($i < $argc) {
-  $tab[] = preg_split('/\s+/', $argv[$i], -1, PREG_SPLIT_NO_EMPTY);
+  $tmp = array_filter(explode(" ", trim($argv[$i])));
+  $x = 0;
+  while ($tmp[$x]) {
+    $tab[$j++] = $tmp[$x++];
+  }
   $i++;
 }
-sort($tab[0]);
-print_r($tab);
-echo join('<br>', $tab);
+array_multisort($tab, SORT_ASC, SORT_STRING);
+echo implode("\n", $tab),"\n";
 ?>
