@@ -3,11 +3,16 @@
 if ($argc > 1) {
   $tab = preg_split('/\s+/', $argv[1], 0, PREG_SPLIT_NO_EMPTY);
   $nb = count($tab);
+  $tab[$nb] = $tab[0];
   $i = 0;
-  print($tab[$nb - 1]);
-  while ($tab[$i] && $i < ($nb - 1)) {
-    echo " ", $tab[$i++];
+  while ($tab[$i]) {
+    $tab[$i] = $tab[$i + 1];
+    $i++;
   }
-  echo "\n";
+  $i = 0;
+  while ($i < $nb - 1) {
+  echo $tab[$i++], " ";
+  }
+  echo $tab[$i], "\n";
 }
 ?>
