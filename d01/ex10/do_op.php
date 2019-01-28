@@ -8,7 +8,7 @@ if ($argc != 4) {
       $tab[] = trim($argv[$i]);
       $i++;
   }
-  print_r($tab);
+  //Tester avec les - et +
   if ($tab[1] == "+") {
     echo $tab[0] + $tab[2],"\n";
   }
