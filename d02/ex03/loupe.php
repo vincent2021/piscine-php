@@ -8,7 +8,6 @@ function ft_get_elem($elem) {
 function ft_upper($elem) {
   return mb_strtoupper($elem[0]);
 }
-//fin de chaine /n ?
 if ($argv[1]) {
   echo preg_replace_callback("/(?<=<a)(.*?)(?=\/a>)/is", ft_get_elem, file_get_contents($argv[1]));
 }
