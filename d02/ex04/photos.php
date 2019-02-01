@@ -1,6 +1,6 @@
 #!/usr/bin/php
 <?php
-if ($argv[1]) {
+if ($argv[1] && substr($argv[1], 0 , 7) == "http://") {
   error_reporting(E_ERROR | E_PARSE);
   $html = DOMDocument::loadHTMLFile($argv[1]);
   foreach ($html->getElementsByTagName("img") as $img) {
