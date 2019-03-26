@@ -1,62 +1,75 @@
-#menu {
-  min-width: 650px;
-  max-height: 80px;
+#menu
+{
+	margin-top:15px
 }
 
-#menu ul {
-  list-style-type: none;
-  text-align: center;
-  margin: 0;
-  padding: 10px;
+#menu ul
+{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+  	padding:0;
+  	background-color: mediumaquamarine;
 }
 
-#menu li {
-  float: left;
-  font-family: Helvetica, sans-serif;
-  margin: auto;
-  background-color: mediumaquamarine;
-  padding: 10px;
-  width: 125px;
-  border-right: solid 2px;
-  border-left: solid 2px;
-  border-color: white;
+#menu ul a
+{
+	display:block;
+	color: navy;
+	text-decoration:none;
+	font-size:12pt;
+	line-height:40px;
+	padding:0 15px;
+	width: 150px;
+	text-align: center;
+	font-family: Helvetica,Arial,sans-serif;
 }
 
-#menu li a {
-  display: block;
-  text-decoration: none;
-  color:antiquewhite;
+#menu ul li
+{
+	transition: all;
+	transition-duration: 0.5s;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
 }
 
-#menu ul li:hover ul {
-  display: block;
+#menu ul li:hover
+{
+  background:antiquewhite;
 }
 
-#menu li:hover ul li {
-  float: none;
-  border: none;
-  width: 100px;
+#menu ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background: mediumaquamarine;
+	padding:0
 }
 
-#menu ul li ul {
-  display: none;
-  margin-top: 10px;
-  border-top: solid 2px;
-  border-top-color: white;
-  padding: 2%;
+#menu ul ul li
+{
+	float:none;
+	width:180px
 }
 
-#menu li a:hover {
-  color: Maroon;
+#menu ul ul a
+{
+	line-height:120%;
+	padding:10px 15px
 }
 
-#menu ul li ul a {
-  text-decoration: none;
-  color: antiquewhite;
-  height: 3%;
-  text-align: left;
+#menu ul ul ul
+{
+	top:0;
+	left:100%
 }
 
-#menu ul li ul a:hover {
-  color: Maroon;
+#menu ul li:hover > ul
+{
+	display:block
 }
