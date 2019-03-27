@@ -8,21 +8,19 @@ if ($argc != 4) {
       $tab[] = trim($argv[$i]);
       $i++;
   }
-  //Tester avec les - et +
   if ($tab[1] == "+") {
     echo $tab[0] + $tab[2],"\n";
   }
-  if ($tab[1] == "-") {
+  else if ($tab[1] == "-") {
     echo $tab[0] - $tab[2], "\n";
   }
-  if ($tab[1] == "/") {
+  else if ($tab[1] == "/") {
     echo $tab[0] / $tab[2], "\n";
   }
-  //Gestion dans zsh hasardeuse
-  if ($tab[1] == "*") {
+  else if ($tab[1] == "*") {
     echo $tab[0] * $tab[2], "\n";
   }
-  if ($tab[1] == "%") {
+  else if ($tab[1] == "%") {
     echo $tab[0] % $tab[2], "\n";
   }
 }

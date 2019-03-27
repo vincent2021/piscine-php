@@ -10,6 +10,8 @@ while ($i < $argc) {
   }
   $i++;
 }
-array_multisort($tab, SORT_ASC, SORT_STRING);
-echo implode("\n", $tab),"\n";
+if ($tab) {
+  array_multisort($tab, SORT_ASC, SORT_STRING);
+  echo implode("\n", $tab),"\n";
+}
 ?>
