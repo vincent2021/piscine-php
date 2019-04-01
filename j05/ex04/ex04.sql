@@ -1,1 +1,1 @@
-UPDATE ft_table SET date_de_creation = ADDDATE(date_de_creation, INTERVAL 1 YEAR) WHERE id > 5;
+UPDATE ft_table SET creation_date = ADDDATE(creation_date, INTERVAL 1 YEAR) WHERE id > 5;
