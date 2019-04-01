@@ -1,0 +1,181 @@
+html, head, body{
+	width:100%;
+	min-width: 680px;
+	margin:0;
+	padding:0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 16pt;
+	color: #202020;
+}
+body{
+	background-color: rgb(87, 114, 132, 0.1);
+}
+h1{
+	margin-top: 22px;
+	display: inline-block;
+	color: white;
+	font: Helvetica, sans-serif;
+}
+a{
+	color: #202020;
+	font-size: 18pt;
+	font-weight: bold;
+}
+li{
+	float: left;
+	margin-right: 5px;
+	list-style-type:none;
+}
+table{
+	border-spacing: 10px;
+}
+#logo{
+	height: 85%;
+	width: auto;
+	float: left;
+	margin: 5px 0 0 5px;
+}
+.logo{
+	margin: 10px 10px 10px 10px;
+	text-align: center;
+	height:150px;
+	background-color:#ffb347;
+	box-shadow: 4px 4px 0px antiquewhite;
+	border-style: groove;
+	border-color: antiquewhite;
+	border-radius: 10px;
+}
+.account{
+	margin: -10px 10px 0 0;
+	float: right;
+}
+.account a{
+	font-size: 14px;
+}
+.img_prod {
+	border-color: #fff;
+	border-style: solid;
+	border-width: 10px;
+	border-radius: 10%;
+	background: none;
+}
+.menu{
+	margin: 30px 10px 10px 10px;
+	height: 40px;
+	background-color:#ffb347;
+	box-shadow: 4px 4px 0px antiquewhite;
+	border-style: groove;
+	border-color: antiquewhite;
+	border-radius: 10px;
+}
+.menu ul{
+	margin: 8px -25px 0 -25px;
+	box-shadow: 8px 8px 0px orange; 
+}
+.menu li{
+	width: 19%;
+	text-align: center;
+}
+.menu a{
+	font-size:90%;
+	text-decoration: none;
+}
+
+.footer{
+	float: left;
+	padding: 15px;
+	width: 31%;
+}
+
+.footer h4{
+	color: #000000;
+	padding: 10px 0 16px;
+	border-bottom: 1px solid #e1e1e1;
+	background-color: antiquewhite;
+}
+#connect{
+	margin: 150px 0 150px 150px;
+}
+
+#boutique{
+	float: center;
+	margin: auto;
+	text-align: center;
+}
+#boutique img{
+	width: 300px;
+	height: auto;
+}
+#boutique td{
+	height: 50px;
+	background: none;
+}
+#create{
+	margin: 150px 0 150px 150px;
+}
+#admin a{
+	margin: 50px;
+}
+#error{
+	margin: 150px 0 150px 150px;
+}
+.phone-name{
+	font-size: 35px;
+	text-align: center;
+	background: none;
+}
+.prix {
+	font-size: 14pt;
+}
+.button {
+  background-color: mediumaquamarine;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 2;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 4px;
+}
+
+a.button:hover {
+  background-color: #ffb347;
+}
+
+.outofstock {
+	color:red;
+	font-size: 12pt;
+}
+
+.admin {
+	margin: 2%;
+}
+.cat-admin{
+	font-size: 22px;
+	text-align: center;
+	float: top;
+	vertical-align: top;
+}
+
+.panier {
+	margin: 5%;
+}
+#panier th, td {
+	padding: 15px;
+	text-align: left;
+	background-color: #e1e1e1;
+	text-align: center;
+}
+
+input[type=submit] {
+    padding:8px 20px; 
+	background:mediumaquamarine;
+	font-style:bold;
+	color:white;
+	font-size: 14pt;
+    border:0 none;
+    cursor:pointer;
+    border-radius: 5px; 
+}
