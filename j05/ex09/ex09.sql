@@ -1,2 +1,2 @@
-SELECT COUNT(DISTINCT id_film) AS 'nb_short-films' FROM film
+SELECT COUNT(DISTINCT film) AS 'nb_short-films' FROM film
 WHERE duration <= '42';
