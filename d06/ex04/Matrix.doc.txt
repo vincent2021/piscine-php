@@ -1,0 +1,10 @@
+
+<- Matrix ----------------------------------------------------------------------
+Build a Matrix from Vertex. Please provide an array with the follwing presets:
+['preset'] = PROJECTION with keys fov, far, near, ratio
+SCALE with SCALE
+RX, RY, RZ with an angle;
+It handles the follwing methods:
+ mult($rhs)
+ transformVertex($vtx)
+---------------------------------------------------------------------- Matrix ->

@@ -1,0 +1,6 @@
+
+<- Vertex ----------------------------------------------------------------------
+This class handles coordinates. It supports the following methods: get$.
+To construct, please provide an array such as:
+array('x' => 0, 'y'=> 0, 'z' => 0);
+---------------------------------------------------------------------- Vertex ->

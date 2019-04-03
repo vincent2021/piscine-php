@@ -1,0 +1,16 @@
+
+<- Vector ----------------------------------------------------------------------
+Build a vector from one or two Vertex (dest and orig)
+You should provide an array such as Array('dest' => Class Vertex,
+(option) 'orig' => Vertex;
+It handles these methodes"
+     
+     function normalize()
+     function add($rhs)
+     function sub($rhs)
+     function opposite()
+     function scalarProduct($k)
+     function dotProduct($rhs) 
+     function cos($rhs)
+     function crossProduct($rhs)
+---------------------------------------------------------------------- Vector ->
