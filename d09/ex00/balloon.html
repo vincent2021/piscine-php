@@ -1,0 +1,39 @@
+<html><head><title>Balloon</title></head>
+    <body>
+    <div id="balloon" onclick="ft_ballon()" onmouseout="ft_leave()" style="border-radius:100%;background-color:red;height:200px;width:200px"></div>
+    <script>
+        function ft_ballon() {
+            var size = parseInt(document.getElementById("balloon").style.height);
+            var bgcolor = document.getElementById("balloon").style.backgroundColor;
+            console.log(size);
+            document.getElementById("balloon").style.height=(size + 10)+"px";
+            document.getElementById("balloon").style.width=(size + 10)+"px";
+            if ((size + 10) > 420) {
+                document.getElementById("balloon").style.height="200px";
+                document.getElementById("balloon").style.width="200px";
+            }
+            if (bgcolor === "red")
+                document.getElementById("balloon").style.backgroundColor="green";
+            else if (bgcolor === "green")
+                document.getElementById("balloon").style.backgroundColor="blue";
+            else
+                document.getElementById("balloon").style.backgroundColor="red";
+        };
+        function ft_leave() {
+            var bgcolor = document.getElementById("balloon").style.backgroundColor;
+            var size = parseInt(document.getElementById("balloon").style.height);
+            console.log(size);
+            if (size - 5 >= 200) {
+                document.getElementById("balloon").style.height=(size - 5)+"px";
+                document.getElementById("balloon").style.width=(size - 5)+"px";
+            }
+            if (bgcolor === "red")
+                document.getElementById("balloon").style.backgroundColor="blue";
+            else if (bgcolor === "blue")
+                document.getElementById("balloon").style.backgroundColor="green";
+            else
+                document.getElementById("balloon").style.backgroundColor="red";
+        }
+    </script>
+    </body>
+</html>

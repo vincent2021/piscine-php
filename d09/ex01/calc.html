@@ -1,0 +1,36 @@
+<html><head><title>Calc</title></head>
+<body>
+    <form onsubmit="ft_calc()">
+        <input id="left" type="text" size="8">
+            <select id="op">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="*">*</option>
+            <option value="%">%</option>
+        </select>
+        <input id="right" type="text" size="8">
+        <input id="submit" type="submit" value="Try me!">
+    </form>
+    <script>
+        setInterval(function(){ alert("Please, use me..."); }, 30000);
+        function ft_calc() {
+           var a = parseInt(document.getElementById("left").value);
+           var b = parseInt(document.getElementById("right").value);
+           var op = document.getElementById("op").value
+           
+           if (Number.isInteger(a) && a >= 0 && Number.isInteger(b) && b >= 0) {
+                var result = eval(a+op+b);
+                console.log(result);
+                alert(result);
+           } else if ((op == "/" || op == "%") && b == 0) {
+                alert("It's over 9000!");
+                console.log("It's over 9000!");
+           } else {
+               alert('Error :(');
+               console.log("Error :(");
+            }
+        }
+    </script>
+</body>
+</html>

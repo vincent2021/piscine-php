@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <title>Balloon jQuery</title>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+        <div id="balloon" style="border-radius:100%;background-color:red;height:200px;width:200px"></div>
+</body>
+
+    <script>
+        var color = {0: 'red', 1: 'green', 2: 'blue'};
+        var colorIndex = 0;
+        var ballon;
+        var size = 200;
+        $(document).ready(function(){
+            ballon = $('#balloon');
+            ballon.click(Increase);
+            ballon.mouseleave(Decrease);
+        })
+        function Decrease(){
+            size -= 5;
+            if (size < 200) {
+                size = 200;
+            }
+            colorIndex--;
+            if (colorIndex < 0) {
+                colorIndex = 2;
+            }
+            ballonRefresh(colorIndex);
+        }
+        function Increase() {
+            size += 10;
+            if (size > 420) {
+                size = 200;
+            }
+            colorIndex++;
+            if (colorIndex > 2) {
+                colorIndex = 0;
+            }
+            ballonRefresh(colorIndex);
+        }
+        function ballonRefresh(colorIndex){
+            ballon.css('height', size);
+            ballon.css('width', size);
+            ballon.css('backgroundColor', color[colorIndex]);
+        }
+    </script>
+
+</html>
